@@ -1,0 +1,6 @@
+.env
+venv/
+__pycache__/
+*.pyc
+translation_groups.json
+channel_links.json
