@@ -29,6 +29,9 @@ async def translate_text(text: str, target_language: str) -> str:
     if not text.strip():
         return ""
 
+    if target_language.strip().casefold() == "tagalog":
+        target_language = "tl"
+
     return GoogleTranslator(source="auto", target=target_language).translate(text)
 
 
@@ -159,6 +162,8 @@ async def addchannel(
     group_name = group.lower().strip()
     channel_id = str(channel.id)
     lang = language.strip()
+    if lang.casefold() == "tagalog":
+        lang = "tl"
 
     groups.setdefault(guild_id, {})
     groups[guild_id].setdefault(group_name, {})

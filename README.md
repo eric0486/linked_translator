@@ -116,6 +116,7 @@ Examples:
 | Portuguese            | pt    |
 | Arabic                | ar    |
 | Hindi                 | hi    |
+| Tagalog (Filipino)    | tl    |
 
 ## Requirements
 
